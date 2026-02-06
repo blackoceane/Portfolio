@@ -12,3 +12,12 @@ Portfolio personnel développé avec **HTML**, **CSS** et **JavaScript**, prése
 | Formulaire spam | Validation JS : `trim()` + `preventDefault()` |
 | Design responsive | Media queries `@media (max-width: 768px)` |
 | Barre de compétences | Animation CSS `width` avec classes `.html`, `.js` |
+
+
+## ✅ Fonctionnalités implémentées
+- [x] **Menu responsive** burger (JS EventListener)
+- [x] **Formulaire contact** validé (name, email, message)
+- [x] **Barres compétences** animées (80% HTML, 60% C#, etc.)
+- [x] **Design dark** crimson/black (CSS Grid/Flexbox)
+- [x] **Smooth scroll** navigation
+- [x] **GitHub Pages** déploiement live
