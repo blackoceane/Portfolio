@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0e0e0e;
+  color: white;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: black;
+  padding: 15px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: crimson;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: crimson;
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.bar {
+  background: #333;
+  height: 15px;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 100%;
+  background: crimson;
+  border-radius: 10px;
+}
+
+.html { width: 80%; }
+.js { width: 50%; }
+.csharp { width: 60%; }
+.php { width: 45%; }
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background: crimson;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+}

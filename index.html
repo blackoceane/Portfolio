@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Océane Tiedjom | Portfolio Développeuse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h2 class="logo">Océane</h2>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">☰</div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Développeuse  Junior</h1>
+  <a href="#contact" class="btn">Me contacter</a>
+</section>
+
+<section id="about">
+  <h2>À propos</h2>
+  <p>
+    Étudiante en Techniques de l’informatique, passionnée par le développement web.
+    Je développe des interfaces claires, accessibles et interactives en utilisant
+    JavaScript pur. Je cherche un stage pour mettre mes compétences au service d’une
+    entreprise comme CGI, Ubisoft ou une PME innovante.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Compétences techniques</h2>
+
+  <div class="skill">
+    <span>HTML / CSS</span>
+    <div class="bar"><div class="progress html"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>JavaScript (DOM, events, validation)</span>
+    <div class="bar"><div class="progress js"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>C# / POO</span>
+    <div class="bar"><div class="progress csharp"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>PHP / MySQL</span>
+    <div class="bar"><div class="progress php"></div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projets académiques</h2>
+
+  <div class="card">
+    <h3>Portfolio personnel</h3>
+    <p>HTML, CSS, JavaScript — Validation de formulaire, menu responsive</p>
+  </div>
+
+  <div class="card">
+    <h3>Application WPF</h3>
+    <p>C# — MVVM, gestion de commandes et clients</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Nom">
+    <input type="email" id="email" placeholder="Email">
+    <textarea id="message" placeholder="Votre message"></textarea>
+    <button type="submit">Envoyer</button>
+    <p id="formMessage"></p>
+  </form>
+</section>
+
+<footer>
+  <p> 2026 – Océane Tiedjom</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
