@@ -22,5 +22,7 @@ Portfolio personnel développé avec **HTML**, **CSS** et **JavaScript**, prése
 - [x] **Smooth scroll** navigation
 - [x] **GitHub Pages** déploiement live
 
+**Créer le 5 décembre 2023**
 ---
-**Étudiante CEGEP Shawinigan** - Techniques de l'informatique
+**Étudiante CEGEP Shawinigan** - Techniques de l'informatique 
+
