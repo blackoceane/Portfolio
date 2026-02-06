@@ -5,7 +5,7 @@ Portfolio personnel développé avec **HTML**, **CSS** et **JavaScript**, prése
 - Implémenter un **menu burger** animé avec JavaScript qui s' affiche dans le responsive
 - Développer une **validation de formulaire**
 
-  ## 🧠 Problématiques résolues
+  ##  Problématiques résolues
 | Problème | Solution |
 |----------|----------|
 | Navigation mobile | Menu burger toggle avec `classList.toggle()` |
@@ -14,10 +14,13 @@ Portfolio personnel développé avec **HTML**, **CSS** et **JavaScript**, prése
 | Barre de compétences | Animation CSS `width` avec classes `.html`, `.js` |
 
 
-## ✅ Fonctionnalités implémentées
+##  Fonctionnalités implémentées
 - [x] **Menu responsive** burger (JS EventListener)
 - [x] **Formulaire contact** validé (name, email, message)
 - [x] **Barres compétences** animées (80% HTML, 60% C#, etc.)
 - [x] **Design dark** crimson/black (CSS Grid/Flexbox)
 - [x] **Smooth scroll** navigation
 - [x] **GitHub Pages** déploiement live
+
+---
+**Étudiante CEGEP Shawinigan** - Techniques de l'informatique
