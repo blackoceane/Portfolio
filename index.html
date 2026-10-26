@@ -1,94 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Océane Tiedjom | Portfolio Développeuse</title>
+  <title>Oceane Tiedjom Litchap | Portfolio</title>
+  <meta name="description" content="Portfolio d'Oceane Joyce Tiedjom Litchap, finissante en Techniques de l'informatique au Cégep de Shawinigan. Stage recherché du 22 mars au 28 mai 2027.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <nav>
-    <h2 class="logo">Océane</h2>
-    <ul class="nav-links">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Navigation principale">
+    <a class="logo" href="#haut">Oceane<span class="logo-dot">.</span></a>
+    <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="menu">
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#parcours">Parcours</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="burger">☰</div>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Développeuse  Junior</h1>
-  <a href="#contact" class="btn">Me contacter</a>
-</section>
+<main id="contenu">
 
-<section id="about">
-  <h2>À propos</h2>
-  <p>
-    Étudiante en Techniques de l’informatique, passionnée par le développement web.
-    Je développe des interfaces claires, accessibles et interactives en utilisant
-    JavaScript pur. Je cherche un stage pour mettre mes compétences au service d’une
-    entreprise comme CGI, Ubisoft ou une PME innovante.
-  </p>
-</section>
+  <section class="hero" id="haut">
+    <div class="hero-text">
+      <p class="hello">Bonjour, je suis</p>
+      <h1>Oceane Joyce<br>Tiedjom Litchap</h1>
+      <p class="lead">Finissante en Techniques de l'informatique au Cégep de Shawinigan. Je programme des API, des applications, des bases de données et même des robots, et j'aime quand le code fait quelque chose de concret.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+        <a class="btn btn-ghost" href="cv-oceane-tiedjom-litchap.pdf" download>Télécharger mon CV</a>
+      </div>
+    </div>
 
-<section id="skills">
-  <h2>Compétences techniques</h2>
+    <aside class="dispo" aria-label="Disponibilité">
+      <p class="dispo-status"><span class="pulse" aria-hidden="true"></span>Je cherche un stage</p>
+      <p class="dispo-dates">22 mars <span aria-hidden="true">–</span> 28 mai 2027</p>
+      <ul class="dispo-facts">
+        <li>Stage rémunéré en alternance travail-études</li>
+        <li>Développement, soutien informatique, réseaux ou données</li>
+        <li>Basée à Shawinigan, ouverte au télétravail et à tout le Canada</li>
+      </ul>
+    </aside>
+  </section>
 
-  <div class="skill">
-    <span>HTML / CSS</span>
-    <div class="bar"><div class="progress html"></div></div>
-  </div>
+  <section class="projets" id="projets" aria-labelledby="titre-projets">
+    <div class="section-head">
+      <h2 id="titre-projets">Projets</h2>
+      <p>Des projets réalisés au cégep, tous disponibles sur GitHub. Filtre par domaine pour voir ce qui t'intéresse.</p>
+    </div>
 
-  <div class="skill">
-    <span>JavaScript (DOM, events, validation)</span>
-    <div class="bar"><div class="progress js"></div></div>
-  </div>
+    <div class="filtres" role="group" aria-label="Filtrer les projets">
+      <button class="filtre is-active" data-filtre="tous" aria-pressed="true">Tous</button>
+      <button class="filtre" data-filtre="logiciel" aria-pressed="false">Logiciel</button>
+      <button class="filtre" data-filtre="donnees" aria-pressed="false">Données</button>
+      <button class="filtre" data-filtre="web" aria-pressed="false">Web</button>
+      <button class="filtre" data-filtre="embarque" aria-pressed="false">Embarqué</button>
+      <button class="filtre" data-filtre="jeu" aria-pressed="false">Jeu vidéo</button>
+    </div>
 
-  <div class="skill">
-    <span>C# / POO</span>
-    <div class="bar"><div class="progress csharp"></div></div>
-  </div>
+    <ul class="liste-projets">
+      <li class="projet projet-vedette" data-domaine="logiciel web">
+        <h3>Serveur de fichiers sécurisé</h3>
+        <p>Une API REST en Ruby pour téléverser des fichiers, les protéger par mot de passe et leur appliquer des filtres. Seul le propriétaire d'un fichier peut le modifier ou le supprimer.</p>
+        <ul class="tags"><li>Ruby</li><li>Sinatra</li><li>API REST</li><li>SHA-256</li></ul>
+        <a class="lien-projet" href="https://github.com/blackoceane/serveur-fichiers-securise-ruby">Voir le code</a>
+      </li>
+      <li class="projet" data-domaine="donnees">
+        <h3>Monovox</h3>
+        <p>Une base de données de gestion académique inspirée d'Omnivox : groupes, travaux, notes, moyennes, et une pondération qui ne peut jamais dépasser 100 %.</p>
+        <ul class="tags"><li>SQL</li><li>MariaDB</li><li>16 scripts</li></ul>
+        <a class="lien-projet" href="https://github.com/blackoceane/Monovox-gestion-academique-sql">Voir le code</a>
+      </li>
+      <li class="projet" data-domaine="logiciel donnees">
+        <h3>Gestion commerciale</h3>
+        <p>Une application de bureau qui gère tout le cycle des commandes clients, reliée à une base de données relationnelle.</p>
+        <ul class="tags"><li>C#</li><li>WPF</li><li>MVVM</li><li>MariaDB</li></ul>
+        <a class="lien-projet" href="https://github.com/blackoceane/Gestion-commerciale-csharp-wpf">Voir le code</a>
+      </li>
+      <li class="projet" data-domaine="logiciel">
+        <h3>Parcours d'épreuves</h3>
+        <p>Une application console où une participante traverse des salles qui s'ouvrent grâce aux délégués, aux événements et aux exceptions.</p>
+        <ul class="tags"><li>C#</li><li>.NET 8</li><li>POO</li></ul>
+        <a class="lien-projet" href="https://github.com/blackoceane/Parcours-salles-csharp-poo">Voir le code</a>
+      </li>
+      <li class="projet" data-domaine="embarque">
+        <h3>Maison intelligente</h3>
+        <p>Une alarme à ultrasons, une porte de garage motorisée gérée par une machine à 7 états et une télécommande infrarouge.</p>
+        <ul class="tags"><li>C++</li><li>Arduino</li><li>Capteurs</li></ul>
+        <a class="lien-projet" href="https://github.com/blackoceane/Maison-intelligente-arduino">Voir le code</a>
+      </li>
+      <li class="projet" data-domaine="embarque">
+        <h3>Robot autonome</h3>
+        <p>Un robot suiveur de ligne qui évite les obstacles et tourne grâce au gyroscope, sans aucune intervention humaine.</p>
+        <ul class="tags"><li>C++</li><li>MeAuriga</li><li>Machine à états</li></ul>
+        <a class="lien-projet" href="https://github.com/blackoceane/Robot-autonome-meauriga">Voir le code</a>
+      </li>
+      <li class="projet" data-domaine="jeu">
+        <h3>The Runner</h3>
+        <p>Un jeu de plateforme où le personnage court sans s'arrêter : saut, attaque, décor en parallaxe et machine à états pour le joueur.</p>
+        <ul class="tags"><li>Godot 4</li><li>GDScript</li></ul>
+        <a class="lien-projet" href="https://github.com/blackoceane/TP02_the-runner-">Voir le code</a>
+      </li>
+      <li class="projet" data-domaine="web">
+        <h3>Playlist YouTube</h3>
+        <p>Un site pour créer sa playlist : ajout validé, lecteur intégré, favoris et calcul automatique de la durée totale.</p>
+        <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul>
+        <a class="lien-projet" href="https://github.com/blackoceane/Playlist-youtube-javascript">Voir le code</a>
+      </li>
+    </ul>
+    <p class="aucun" hidden>Aucun projet dans ce domaine pour l'instant.</p>
+  </section>
 
-  <div class="skill">
-    <span>PHP / MySQL</span>
-    <div class="bar"><div class="progress php"></div></div>
-  </div>
-</section>
+  <section class="competences" id="competences" aria-labelledby="titre-competences">
+    <div class="section-head">
+      <h2 id="titre-competences">Compétences</h2>
+    </div>
+    <dl class="grille-competences">
+      <div><dt>Langages</dt><dd>C#, JavaScript, Ruby, PHP, C++, SQL, GDScript</dd></div>
+      <div><dt>Web et applications</dt><dd>API REST, HTML, CSS, JSON, .NET, WPF, React Native avec Expo (en apprentissage)</dd></div>
+      <div><dt>Bases de données</dt><dd>SQL Server, MariaDB, modélisation relationnelle</dd></div>
+      <div><dt>Réseaux et systèmes</dt><dd>Adressage IP, CIDR, routeurs et commutateurs, modèle OSI, Windows, Linux</dd></div>
+      <div><dt>Qualité et sécurité</dt><dd>Tests fonctionnels, validation de données, authentification, hachage des mots de passe</dd></div>
+      <div><dt>Outils et méthodes</dt><dd>Git et GitHub, Visual Studio, VS Code, UML, méthodes agiles</dd></div>
+    </dl>
+  </section>
 
-<section id="projects">
-  <h2>Projets académiques</h2>
+  <section class="parcours" id="parcours" aria-labelledby="titre-parcours">
+    <div class="section-head">
+      <h2 id="titre-parcours">Parcours</h2>
+    </div>
+    <ol class="ligne-temps">
+      <li>
+        <p class="quand">2023 à 2027</p>
+        <h3>DEC en Techniques de l'informatique, programmation</h3>
+        <p>Cégep de Shawinigan. Bourse pour étudiants internationaux de 2024 à 2026.</p>
+      </li>
+      <li>
+        <p class="quand">Depuis juin 2025</p>
+        <h3>Préposée à l'entretien ménager</h3>
+        <p>Hôpital de Shawinigan. Communication avec les patients et le personnel, calme et rigueur sous pression.</p>
+      </li>
+      <li>
+        <p class="quand">2023 à 2025</p>
+        <h3>Commis d'entrepôt à temps partiel</h3>
+        <p>Walmart, Shawinigan. Travail d'équipe et respect des normes de sécurité, en parallèle des études.</p>
+      </li>
+      <li>
+        <p class="quand">2016 à 2022</p>
+        <h3>Diplôme d'études secondaires, série scientifique</h3>
+        <p>Collège La Conquête, Douala, Cameroun.</p>
+      </li>
+    </ol>
+    <p class="extra">Je parle français (langue maternelle) et anglais (niveau intermédiaire). Au cégep, je suis bénévole au comité d'accueil des étudiants internationaux et membre des clubs Entrepreneuriat, LGBTQIA+ et danse.</p>
+  </section>
 
-  <div class="card">
-    <h3>Portfolio personnel</h3>
-    <p>HTML, CSS, JavaScript — Validation de formulaire, menu responsive</p>
-  </div>
+  <section class="contact" id="contact" aria-labelledby="titre-contact">
+    <div class="contact-intro">
+      <h2 id="titre-contact">Travaillons ensemble</h2>
+      <p>Tu as un stage, une question ou un projet ? Écris-moi, je réponds rapidement.</p>
+      <ul class="contact-liens">
+        <li><a href="mailto:litchapjoyce@gmail.com">litchapjoyce@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/oceane-joyce-tiedjom/">LinkedIn</a></li>
+        <li><a href="https://github.com/blackoceane">GitHub</a></li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h3>Application WPF</h3>
-    <p>C# — MVVM, gestion de commandes et clients</p>
-  </div>
-</section>
+    <form id="form-contact" novalidate>
+      <div class="champ">
+        <label for="nom">Ton nom</label>
+        <input type="text" id="nom" name="nom" autocomplete="name">
+        <p class="erreur" id="erreur-nom" aria-live="polite"></p>
+      </div>
+      <div class="champ">
+        <label for="courriel">Ton courriel</label>
+        <input type="email" id="courriel" name="courriel" autocomplete="email">
+        <p class="erreur" id="erreur-courriel" aria-live="polite"></p>
+      </div>
+      <div class="champ">
+        <label for="message">Ton message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <p class="erreur" id="erreur-message" aria-live="polite"></p>
+      </div>
+      <button type="submit" class="btn btn-primary">Préparer le courriel</button>
+      <p class="note-form" id="note-form" aria-live="polite">Ton application de courriel s'ouvrira avec ton message déjà rempli.</p>
+    </form>
+  </section>
 
-<section id="contact">
-  <h2>Contact</h2>
+</main>
 
-  <form id="contactForm">
-    <input type="text" id="name" placeholder="Nom">
-    <input type="email" id="email" placeholder="Email">
-    <textarea id="message" placeholder="Votre message"></textarea>
-    <button type="submit">Envoyer</button>
-    <p id="formMessage"></p>
-  </form>
-</section>
-
-<footer>
-  <p> 2026 – Océane Tiedjom</p>
+<footer class="site-footer">
+  <p>Oceane Joyce Tiedjom Litchap, Shawinigan, 2026. Site codé à la main en HTML, CSS et JavaScript.</p>
 </footer>
 
 <script src="script.js"></script>
